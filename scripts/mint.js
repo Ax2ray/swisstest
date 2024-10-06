@@ -22,7 +22,7 @@ async function main() {
     const contract = replace_contractFactory.attach(replace_contractAddress);
   
     const replace_functionName = "mint";
-    const replace_functionArgs = ["0x38F09b7c692F8f428E5d93878a3d0Ee1FF9F00a5","100000000000000000000"]; // 100 tokens with 18 decimal places
+    const replace_functionArgs = ["your wallet address","100000000000000000000"]; // 100 tokens with 18 decimal places
     
     const amountMinted = hre.ethers.formatEther(replace_functionArgs[1]); // Converts to human-readable format (100 tokens)
     console.log(`Minting ${amountMinted} tokens...`);
